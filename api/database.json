@@ -13,6 +13,21 @@
       "id": 161,
       "shape": "polygon",
       "creation": "oort cloud"
+    },
+    {
+      "creator": "telly",
+      "color": "red",
+      "id": 162
+    },
+    {
+      "creator": "telly",
+      "color": "red",
+      "id": 163
+    },
+    {
+      "creator": "sampson",
+      "color": "orange",
+      "id": 164
     }
   ]
 }

@@ -11,7 +11,7 @@ document.querySelector("#lego-btn").addEventListener("click", () => {
 })
 
 function addNewLegoCreation(creation) {
-  fetch("http://localhost:8088/legos", {
+  fetch("http://localhost:8080/legos", {
     method: "POST",
     headers:{
       "Content-Type": "application/json"
@@ -21,13 +21,13 @@ function addNewLegoCreation(creation) {
 }
 
 function updateLego(id, shape, creation) {
-  fetch(`http://localhost:8088/legos/${id}`)
+  fetch(`http://localhost:8080/legos/${id}`)
   .then( lego => lego.json())
   .then( lego => {
     console.log(lego)
     lego.shape = shape
     lego.creation = creation
-    fetch(`http://localhost:8088/legos/${id}`, {
+    fetch(`http://localhost:8080/legos/${id}`, {
       method: "PUT",
       headers:{
         "Content-Type": "application/json"
